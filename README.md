@@ -85,9 +85,6 @@ Aurea-Premium-Music-Player/
 ├── index.html          → App structure & layout
 ├── style.css           → Dark theme, animations, responsive styles
 ├── script.js           → Player logic, playlist, search, favorites
-└── assets/
-    ├── songs/          → Audio files
-    └── covers/         → Album artwork images
 ```
 
 ---
@@ -103,23 +100,6 @@ Aurea-Premium-Music-Player/
 ![CSS Animations](https://img.shields.io/badge/-CSS%20Animations-ff69b4?style=flat-square)
 
 </div>
-
----
-
-## 🚀 Run Locally
-
-```bash
-# Clone the repository
-git clone https://github.com/Samir-frontend/Aurea-Premium-Music-Player.git
-
-# Navigate to the folder
-cd Aurea-Premium-Music-Player
-
-# Open in browser
-open index.html
-```
-
-> No installations. No dependencies. Just open and play. 🎵
 
 ---
 
