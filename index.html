@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Aurea Premium - Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+    <!-- ====== SIDEBAR ====== -->
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <i class="fas fa-crown"></i>
+            <span>Aurea</span>
+        </div>
+        
+        <nav>
+            <ul>
+                <li class="active" data-tab="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </li>
+                <li data-tab="search">
+                    <i class="fas fa-search"></i>
+                    <span>Search</span>
+                </li>
+                <li data-tab="explore">
+                    <i class="fas fa-compass"></i>
+                    <span>Explore</span>
+                </li>
+                <li data-tab="library">
+                    <i class="fas fa-music"></i>
+                    <span>Library</span>
+                </li>
+                <li data-tab="liked">
+                    <i class="fas fa-heart"></i>
+                    <span>Liked</span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="playlist-section">
+            <p><i class="fas fa-plus-circle"></i> <span>Create Playlist</span></p>
+            <p><i class="fas fa-heart" style="color: #D4AF37;"></i> <span>Favorites</span></p>
+        </div>
+
+        <div class="user-profile">
+            <i class="fas fa-user-circle"></i>
+            <span>Guest</span>
+        </div>
+        
+        <div class="sidebar-close" id="sidebarClose">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <div class="main-content">
+        <!-- Header -->
+        <header>
+            <div class="header-left">
+                <i class="fas fa-bars" id="menuToggle"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="header-right">
+                <i class="fas fa-bell"></i>
+                <button class="premium-btn">✨ Premium</button>
+                <i class="fas fa-user-circle" style="font-size: 28px; color: #D4AF37;"></i>
+            </div>
+        </header>
+
+        <!-- Dynamic Content Area -->
+        <div id="contentArea">
+            <!-- Home, Search, Explore, Library, Liked will be injected here -->
+        </div>
+    </div>
+
+    <!-- ====== MUSIC PLAYER (BOTTOM) ====== -->
+    <div class="music-player">
+        <div class="player-left">
+            <img id="currentCover" src="https://picsum.photos/200/200?random=1" alt="cover" />
+            <div class="song-info">
+                <p id="currentTitle">Select a song</p>
+                <span id="currentArtist">Aurea</span>
+            </div>
+            <i class="fas fa-heart" id="likeBtn"></i>
+        </div>
+
+        <div class="player-center">
+            <div class="controls">
+                <i class="fas fa-step-backward" id="prevBtn"></i>
+                <i class="fas fa-play-circle" id="playBtn"></i>
+                <i class="fas fa-step-forward" id="nextBtn"></i>
+            </div>
+            <div class="progress-container">
+                <span id="currentTime">0:00</span>
+                <input type="range" id="progressBar" min="0" max="100" value="0" />
+                <span id="totalTime">0:00</span>
+            </div>
+        </div>
+
+        <div class="player-right">
+            <i class="fas fa-volume-up"></i>
+            <input type="range" id="volumeControl" min="0" max="100" value="80" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
